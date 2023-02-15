@@ -191,7 +191,7 @@ h1 {
     justify-content: center;
 }
 #form-text h3 {
-    font-size: 4rem;
+    font-size: 3rem;
     color: var(--thirdh);
     font-weight: 800;
     line-height: 1.5;
@@ -199,7 +199,7 @@ h1 {
 }
 
 #form-text p {
-    font-size: 3rem;
+    font-size: 2rem;
     color: var(--fourth);
     line-height: 1.8;
     font-weight: 100;
@@ -214,8 +214,8 @@ h1 {
 }
 
 #contact-links i{
-    margin-top: 20px;
-    font-size: 6.5rem;
+    margin-top: 10px;
+    font-size: 4rem;
     color: var(--thirdh);
 }
 
