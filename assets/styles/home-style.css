@@ -45,10 +45,16 @@ h1 {
 
 
 .home-icon {
-    font-size: 4rem;
+    font-size: 4.5rem;
     margin: 30px;
     width: 40px;
-    color: var(--fourth)
+    color: var(--fourth);
+    position: relative;
+    transition: all 1s;
+}
+
+.home-icon:hover {
+    color:var(--thirdh);
 }
 
 #skills-section {
@@ -160,7 +166,7 @@ h1 {
 .text-container h5 {
     color: var(--thirdh);
     font-size: 3rem;  
-    line-height: 1.5; 
+    line-height: 1.1; 
 }
 
 .text-container p {
@@ -174,6 +180,13 @@ h1 {
     margin-top: 10px;
     font-size: 5rem;
     color: var(--thirdh);
+    transition: all 1s;
+}
+
+
+.text-container i:hover {
+    color: var(--fourth);
+    transition: all 1s;
 }
 
 #contact-section {
@@ -216,9 +229,15 @@ h1 {
 }
 
 #contact-links i{
-    margin-top: 10px;
-    font-size: 4rem;
+    margin-top: 25px;
+    font-size: 5rem;
     color: var(--thirdh);
+    transition: all 1s;
+}
+
+#contact-links i:hover {
+    color: var(--fourth);
+    transition: all 1s;
 }
 
 #form-container {
@@ -233,7 +252,13 @@ h1 {
 #contact-title {
     font-size: 4rem;
     margin-bottom: 20px;
+    font-weight: 800;
 }
+
+::placeholder {
+    color: var(--fourth);
+}
+
 
 .form {
     height: 70%;
@@ -256,6 +281,12 @@ h1 {
 .grid-item:nth-child(2) {
     grid-area: 2 / 1;
     margin: 10px;
+    border: none;
+    color: var(--fourth);
+    padding-left: 10px;
+    background: var(--second);
+    border-bottom: solid 3px var(--thirdh);
+    
 }
 
 .grid-item:nth-child(3) {
@@ -266,16 +297,29 @@ h1 {
 .grid-item:nth-child(4) {
     grid-area: 2 / 2;
     margin: 10px;
+    border: none;
+    color: var(--fourth);
+    padding-left: 10px;
+    background: var(--second);
+    border-bottom: solid 3px var(--thirdh);
+
 }
 
 .grid-item:nth-child(5) {
     grid-area: 3 / 1 / 3 / 3;
     margin: 10px;
+
 }
 
 .grid-item:nth-child(6) {
     grid-area: 4 / 1 / 4 / 3;
     margin: 10px;
+    border: none;
+    color: var(--fourth);
+    padding-left: 10px;
+    background: var(--second);
+    border-bottom: solid 3px var(--thirdh);
+
 } 
 
 .grid-item:nth-child(7) {
@@ -286,12 +330,40 @@ h1 {
 .grid-item:nth-child(8) {
     grid-area: 6 / 1 / 6 / 3;
     margin: 10px;
+    border: none;
+    color: var(--fourth);
+    padding-left: 5px;
+    padding-top: 10px;
+    background: var(--second);
+    border-bottom: solid 3px var(--thirdh);
+    resize: none;
+    font-size: 1.4rem;
+
 }
 
 .grid-item:nth-child(9) {
     grid-area: 7 / 1 / 7 / 3;
     margin: 10px;
 }
+
+.form input:focus, .form textarea:focus {
+    outline :none;
+    background: var(--first);
+    border-radius: 5px;
+}
+
+.form button {
+    justify-self: center;
+    width: 100px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 5px 2px 3px black;
+    background: var(--fourth);
+    overflow: hidden;
+    
+}
+
+
 
 footer {
     position: fixed;
