@@ -123,7 +123,7 @@ h1 {
 
 #proyect-container {
     width: 70%;
-    height: 70%;
+    height: 63%;
     display: grid;
     grid-template-columns: 2fr 1fr;
     background: var(--first);
@@ -138,7 +138,7 @@ h1 {
 
 .img-txt {
     position: absolute;
-    font-size: 4rem;
+    font-size: 3.5rem;
     font-weight: 800;
     filter: blur(1px);
 
@@ -150,7 +150,6 @@ h1 {
     object-fit: cover;
     border-radius: 5px;
     filter: blur(5px);
-    overflow: hidden;
 
 }
 
@@ -267,7 +266,7 @@ h1 {
     border-radius: 8px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 30px 50px 30px 60px 30px 2fr 60px;
+    grid-template-rows: 30px 50px 30px 60px 30px 1fr 60px;
     color: var(--thirdh);
     font-weight: 800;
     font-size: 1.6rem;
@@ -386,4 +385,86 @@ footer a, footer p {
 
 footer p i {
     margin: 5px;
+}
+
+.footer-link {
+    text-decoration: none;
+}
+
+.footer-link:hover{
+    color: var(--thirdh);
+}
+
+@media only screen and (max-width:1200px) {
+    #proyect-title {
+        font-size: 3.5rem;
+    }
+    
+    #proyect-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #form-text {
+        flex-basis: 45%;
+    }
+}
+
+@media only screen and (max-width:785px) {
+    h1 {
+        font-size: 8rem;
+    }
+
+    #home-section h2 {
+        font-size: 2rem
+    }
+
+    .home-icon {
+        font-size: 3rem;
+    }
+
+    #proyect-container {
+        grid-template-columns: 1fr;
+        background-image: url("/assets/img/proyect.jpg");
+        background-size: cover;
+        background-blend-mode: multiply;
+    }
+
+    #proyect-title {
+        font-size: 2rem;
+    }
+
+    .img-txt {
+        font-size: 1.8rem;
+    }
+
+    .img-container {
+        display: none;        
+    }
+
+    #contact-section {
+        height: 250vh;
+        height: 200dvh;
+        flex-direction: column;
+    }
+
+    #form-text {
+        height: 100vh;
+        height: 100dvh;
+        flex-basis: inherit;
+    }
+
+    #form-container {
+        padding: 40px;
+        height: 50%;
+        height: 100dvh;
+    }
+
+    .form {
+        height: 100%;
+    }
+
+    footer {
+        height: 4vh;
+        height: 4dvh;
+    }
 }
